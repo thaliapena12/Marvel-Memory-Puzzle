@@ -1,3 +1,10 @@
+.title {
+  color: red;
+  font-weight: normal;
+  text-align: center;
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   background: radial-gradient(black, red);
@@ -14,6 +21,12 @@ body {
 .game-details{
     font-size: 20px;
     color: red;
+}
+
+.card {
+  position: relative;
+  height: 175px;
+  width: 125px;
 }
 
 .face-val {
@@ -39,4 +52,37 @@ body {
 .value {
   transition: transform 100ms ease-in-out;
   transform: scale(.9);
+}
+
+.card.visible .back {
+  transform: rotateY(-180deg);
+   
+}
+
+.card.matched .value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: red;
+
+}
+
+.overlay-small {
+  font-size: .3em;
+}
+
+.overlay.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
 }
