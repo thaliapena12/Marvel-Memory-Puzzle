@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: radial-gradient(black, red);
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  justify-content: center;
+
+}
+
+.game-details{
+    font-size: 20px;
+    color: red;
+}
+
+.face-val {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 500ms ease-in-out;
+}
+.back {
+   background-image:  url('../img/marvellogo4.jpg') ;
+  border-color: red;
+}
+
+.front {
+  background-color: red;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+
+.value {
+  transition: transform 100ms ease-in-out;
+  transform: scale(.9);
+}
