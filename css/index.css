@@ -107,11 +107,13 @@ p {
   display: flex;
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
+
 }
 
 .logo-overlay{
     height: 100px;
     width: 323px;
+    border-radius: 5px;
 
 }
 @keyframes overlay-grow {
@@ -152,7 +154,7 @@ p {
   transition: transform 100ms ease-in-out;
   transform: scale(.9);
   height: 194px;
-  width: 141px;
+  width: 157px;
 }
 
 .front-val:hover .value {
