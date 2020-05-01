@@ -6,26 +6,26 @@
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Marvel Memory Puzzle</title>
         <link rel="stylesheet" href="css/index.css">
-       
+        <script async src="js/script.js"></script>
     </head>
 
     <body>
         <div id="board">
-        <script async src="js/script.js"></script>
+       
             
-            <h1 class="title">Marvel Memory Puzzle</h1>
+            <!-- <h1 class="title">Marvel Memory Puzzle</h1> -->
 
             <div class="overlay visible">
                 <img class="logo-overlay" src="img/marvellogo3.jpg">
-                <h2>Instructions:</h2>
+                <h2>Instructions</h2>
             </br>
             <p>Player turns over any two cards (one at a time), if they match 
-                the cards will be removed. When player turns over two cards that 
+                the cards will remain turned. When player turns over two cards that 
                 do not match, those cards are turned face down again (in the same
                 position) and they get to try again untilthe board is clear. The 
                 trick is to remember which cards are where.</p> 
             </br>
-               <h2>Click to Start</h2> 
+               <h3>Click to Start</h3> 
             </div>
             <div id="game-over" class="overlay">
                 YOU LOST
@@ -39,10 +39,10 @@
             <div class="game-container">
                 <div class="game-details">
                     <div class="details">
-                        Timer <span id="time-left">100</span> secs
+                        Timer: <span id="time-left">100</span> secs
                     </div>
                     <div class="details">
-                        Flips <span id="flips">0</span>
+                        Flips: <span id="flips">0</span>
                     </div>
                 </div>
                 
