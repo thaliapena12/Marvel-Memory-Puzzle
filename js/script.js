@@ -117,7 +117,7 @@ function gameReady(){
 
 
     overlay.forEach(over => {
-        // console.log(over)
+   
         over.addEventListener('click', () => {
             over.classList.remove('visible');
             game.start();
