@@ -79,7 +79,7 @@ class Game {
         card1.classList.add('cardsMatched');
         card2.classList.add('cardsMatched');
         if (this.cardsMatched.length === this.cardsArray.length)
-            this.victory();
+            this.won();
     }
     cardType(card) {
         return card.getElementsByClassName('value')[0].src;
@@ -103,8 +103,9 @@ class Game {
     }
 
     won(){
-        clearInterval(this.counter);
+        
         document.getElementById('won').classList.add('visible');
+        clearInterval(this.counter);
     }
 
 }
