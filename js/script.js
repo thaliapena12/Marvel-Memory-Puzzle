@@ -11,9 +11,9 @@ class Game {
 
     start(){
         this.checkCard = null;
-        this.matched = [];
         this.totalClicks = 0;
         this.timeLeft = this.timeTotal;
+        this.cardsMatched = [];
         this.busy = true;
         setTimeout(() => {
             this.shuffle();
@@ -37,8 +37,9 @@ class Game {
 
     flip(card){
         if (this.checkFlip(card)) {
-            card.classList.add('visible');
             this.totalClicks++;
+            card.classList.add('visible');
+            
             this.ticker.innerText = this.totalClicks;
             if (this.checkCard)
                 this.checkMatch(card);
@@ -50,7 +51,7 @@ class Game {
     hide(){
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
-            card.classList.remove('matched');
+            card.classList.remove('cardsMatched');
         });
 
     }
@@ -72,11 +73,12 @@ class Game {
         }, 1000);
     }
     cardComp(card1, card2){
-        this.matched.push(card1);
-        this.matched.push(card2);
-        card1.classList.add('matched');
-        card2.classList.add('matched');
-        if (this.matched.length === this.cardsArray.length)
+        this.cardsMatched.push(card1);
+        this.cardsMatched.push(card2);
+        console.log(this)
+        card1.classList.add('cardsMatched');
+        card2.classList.add('cardsMatched');
+        if (this.cardsMatched.length === this.cardsArray.length)
             this.victory();
     }
     cardType(card) {
@@ -91,7 +93,8 @@ class Game {
     }
 
     checkFlip(card) {
-        return !this.busy && !this.matched.includes(card) && card !== this.checkCard;
+        // console.log(this.cardsMatched)
+        return !this.busy && !this.cardsMatched.includes(card) && card !== this.checkCard;
     }
 
     gameOver(){
@@ -103,11 +106,8 @@ class Game {
         clearInterval(this.counter);
         document.getElementById('won').classList.add('visible');
     }
-    
-   
 
 }
-
 
 function gameReady(){
     let cardsDeck = Array.from(document.getElementsByClassName('card'));
