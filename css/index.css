@@ -17,8 +17,12 @@ body {
   justify-content: center;
 
 }
-
-.game-details{
+.game-details {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+.details{
     font-size: 20px;
     color: red;
 }

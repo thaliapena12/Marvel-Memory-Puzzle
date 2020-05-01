@@ -6,15 +6,20 @@
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Marvel Memory Puzzle</title>
         <link rel="stylesheet" href="css/index.css">
+        <script async src="js/script.js"></script>
     </head>
 
     <body>
         
         <div id="board">
-            <script  src="js/script.js" ></script>
-            <h1 classNAme="title">Marvel Memory Puzzle</h1>
+            
+            <h1 class="title">Marvel Memory Puzzle</h1>
 
             <div class="overlay visible">
+                Instructions: Player turns over any two cards (one at a time), if they match the cards will be removed. When player turns over two
+                cards that do not match, those cards are turned face down again (in the same position) and they get to try again until
+                the board is clear. The trick is to remember which cards are where.
+            </br>
                 Click to Start
             </div>
             <div id="game-over" class="overlay">
@@ -26,9 +31,14 @@
                 <span class="overlay-small">Click to Restart</span>
             </div>
 
-            <div classNAme="game-container">
-                <div className="game-details">
-
+            <div class="game-container">
+                <div class="game-details">
+                    <div class="details">
+                        Time <span id="time-left">100</span>
+                    </div>
+                    <div class="details">
+                        Flips <span id="flips">0</span>
+                    </div>
                 </div>
                 
         
@@ -36,172 +46,172 @@
             <!-- Card Deck -->
 
             <!-- ironman card -->
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/ironman.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/ironman.gif">
                 </div>
             </div>
             
             <!-- spiderman card -->
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/spiderman.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/spiderman.gif">
                 </div>
             </div>
             
             <!-- storm card -->
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/storm.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/storm.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/mystique.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/mystique.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/wolverine.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/wolverine.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/blackwidow.gif">
-                </div>
-            </div>
-
-            
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/hulk.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/blackwidow.gif">
                 </div>
             </div>
 
+            
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/hulk.gif">
+                </div>
+            </div>
 
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/captainamerica.gif">
+
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/captainamerica.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/scarletwitch.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/scarletwitch.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/thor.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/thor.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/ghostrider.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/ghostrider.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/jeangrey.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/jeangrey.gif">
                 </div>
             </div>
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/ironman.gif">
-                </div>
-            </div>
-            
-            
-            <div classNAme="card">
-                </div>
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/spiderman.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/ironman.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-">
-            
-                    <img classNAme="value" src="img/storm.gif">
+            <div class="card">
+                </div>
+                <div class="front face-val">
+                    <img class="value" src="img/spiderman.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/mystique.gif">
+            <div class="card">
+                <div class="front face-">
+            
+                    <img class="value" src="img/storm.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/wolverine.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/mystique.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-            
-                    <img classNAme="value" src="img/blackwidow.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/wolverine.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/hulk.gif">
+            <div class="card">
+                <div class="front face-val">
+            
+                    <img class="value" src="img/blackwidow.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/captainamerica.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/hulk.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/scarletwitch.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/captainamerica.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/thor.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/scarletwitch.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/ghostrider.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/thor.gif">
                 </div>
             </div>
             
             
-            <div classNAme="card">
-                <div classNAme="front face-val">
-                    <img classNAme="value" src="img/jeangrey.gif">
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/ghostrider.gif">
+                </div>
+            </div>
+            
+            
+            <div class="card">
+                <div class="front face-val">
+                    <img class="value" src="img/jeangrey.gif">
                 </div>
             
             
