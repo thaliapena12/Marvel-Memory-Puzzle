@@ -112,7 +112,7 @@ class Game {
 function gameReady(){
     let cardsDeck = Array.from(document.getElementsByClassName('card'));
     let overlay = Array.from(document.getElementsByClassName('overlay'));
-    let game = new Game(100, cardsDeck);
+    let game = new Game(120, cardsDeck);
 
 
     overlay.forEach(over => {
