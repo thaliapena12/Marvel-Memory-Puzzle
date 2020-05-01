@@ -2,6 +2,7 @@
 
 ### Need
 
-Add fonts
-style "click here
-clean up code
+ -Add fonts
+-style "click here"
+-clean up code
+-host it
