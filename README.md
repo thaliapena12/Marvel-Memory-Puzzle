@@ -3,13 +3,11 @@
 
 Marvel Memory Puzzle is a Marvel themed card memory game. Players have to focus on their concentration in order to be able to match all 12 pairs of cards.  
 
-  ![1](https://user-images.githubusercontent.com/7420659/78506195-7f578380-7767-11ea-9a4c-a7a10a2f5b88.gif)
 
 ## Quick Links
 
-[Demo](#demo)
 
-- [Live Site Demo](#live-site-demo)
+- [Live Site](#live-site)
 
 [Objectives](#objectives)
 
@@ -32,11 +30,11 @@ Marvel Memory Puzzle is a Marvel themed card memory game. Players have to focus 
 
 ---
 
-## Demo
+
 
 ### Live Site Demo
 
-[Link](https://officeslackers.herokuapp.com/#/)
+[Link](https://thaliapena12.github.io/Marvel-Memory-Puzzle/)
 
 ---
 
