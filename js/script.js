@@ -79,7 +79,6 @@ class Game {
     cardComp(card1, card2){
         this.cardsMatched.push(card1);
         this.cardsMatched.push(card2);
-        console.log(this)
         card1.classList.add('cardsMatched');
         card2.classList.add('cardsMatched');
         if (this.cardsMatched.length === this.cardsArray.length)
@@ -109,7 +108,7 @@ class Game {
 
     won(){
         clearInterval(this.counter);
-        document.getElementById('won-text').classList.add('visible');
+        document.getElementById('won').classList.add('visible');
         
     }
 
@@ -118,7 +117,7 @@ class Game {
 function gameReady(){
     let cardsDeck = Array.from(document.getElementsByClassName('card'));
     let overlay = Array.from(document.getElementsByClassName('overlay'));
-    let game = new Game(20, cardsDeck);
+    let game = new Game(120, cardsDeck);
 
 
     overlay.forEach(over => {
