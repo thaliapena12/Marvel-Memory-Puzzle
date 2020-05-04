@@ -9,7 +9,6 @@ class Game {
         this.matches = document.getElementById('matches')
 
     }
-
     start(){
         this.checkCard = null;
         this.totalClicks = 0;
@@ -28,7 +27,6 @@ class Game {
         this.matches.innerText = this.totalMatches;
 
     }
-
     startCounter(){
         return setInterval(() => {
             this.timeLeft--;
@@ -37,7 +35,6 @@ class Game {
                 this.gameOver();
         }, 1000);
     }
-
     flip(card){
         if (this.checkFlip(card)) {
             card.classList.add('visible');
@@ -48,7 +45,6 @@ class Game {
             else
                 this.checkCard = card;
         }
-
     }
     hide(){
         this.cardsArray.forEach(card => {
@@ -94,31 +90,23 @@ class Game {
             this.cardsArray[i].style.order = index;
         }
     }
-
     checkFlip(card) {
-        // console.log(this.cardsMatched)
         return !this.busy && !this.cardsMatched.includes(card) && card !== this.checkCard;
     }
-
     gameOver(){
         clearInterval(this.counter);
         document.getElementById('gameover').classList.add('visible');
-
     }
-
     won(){
         clearInterval(this.counter);
-        document.getElementById('won').classList.add('visible');
-        
+        document.getElementById('won').classList.add('visible');   
     }
-
 }
 
 function gameReady(){
     let cardsDeck = Array.from(document.getElementsByClassName('card'));
     let overlay = Array.from(document.getElementsByClassName('overlay'));
-    let game = new Game(120, cardsDeck);
-
+    let game = new Game(100, cardsDeck);
 
     overlay.forEach(over => {
         over.addEventListener('click', () => {
@@ -127,10 +115,8 @@ function gameReady(){
         });
     });
     cardsDeck.forEach(card => {
-           // console.log(card)
         card.addEventListener('click', () => {
-           game.flip(card);
-        
+           game.flip(card);  
         });
     });
 }

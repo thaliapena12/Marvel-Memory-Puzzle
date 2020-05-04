@@ -6,15 +6,13 @@
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Marvel Memory Puzzle</title>
         <link rel="stylesheet" href="css/index.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        </style>
         <script defer src="js/script.js"></script>
     </head>
-
     <body>
         <div id="board">
-       
-            
-            <!-- <h1 class="title">Marvel Memory Puzzle</h1> -->
-
             <div class="overlay visible">
                 <img class="logo-overlay" src="img/marvellogo4.jpg">
                 <h2>Instructions</h2>
@@ -22,7 +20,7 @@
             <p> Player turns over any two cards (one at a time), if they match 
                 the cards will remain turned. When player turns over two cards that 
                 do not match, those cards are turned face down again (in the same
-                position) and they get to try again untilthe board is clear. The 
+                position) and they get to try again until the board is clear. The 
                 trick is to remember which cards are where.</p> 
             </br>
                <h3>Click to Start</h3> 
@@ -32,28 +30,25 @@
                 <span class="overlay-small">Click to Restart</span>
             </div>                                                                                  
             <div id="won" class="overlay">
-               <h2>YOU WON!</h2>
+               <h2>Congrats</h2>
+                <img class="won-img" src="img/youwon.gif">
+            </br>
                 <span class="overlay-small">Click to Restart</span>
             </div>
-
             <div class="game-container">
                 <div class="game-details">
                     <div class="details">
-                        Flips: <span id="flips">0</span>
+                        MATCHES: <span id="matches">0</span>
                     </div>
                     <div class="details">
-                        Matches: <span id="matches">0</span>
+                        FLIPS: <span id="flips">0</span>
                     </div>
                     <div class="details">
-                        Timer: <span id="time-left">120</span> secs
+                        TIMER: <span id="time-left">120</span> secs
                     </div>
                     
                 </div>
-                
-        
-            
                 <!-- Card Deck -->
-
                 <!-- ironman card -->
                 <div class="card">
                 <div class="back face-val">
@@ -62,8 +57,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/ironman.gif">
                     </div>
-                </div>
-                
+                </div>     
                 <!-- spiderman card -->
                 <div class="card">
                     <div class="back face-val">
@@ -72,8 +66,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/spiderman.gif">
                     </div>
-                </div>
-                
+                </div>        
                 <!-- storm card -->
                 <div class="card">
                     <div class="back face-val">
@@ -82,9 +75,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/storm.gif">
                     </div>
-                </div>
-                
-                
+                </div>       
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -92,9 +83,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/mystique.gif">
                     </div>
-                </div>
-                
-                
+                </div>        
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -102,9 +91,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/wolverine.gif">
                     </div>
-                </div>
-                
-                
+                </div>           
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -112,9 +99,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/blackwidow.gif">
                     </div>
-                </div>
-
-                
+                </div>           
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -123,8 +108,6 @@
                         <img class="value" src="img/hulk.gif">
                     </div>
                 </div>
-
-
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -132,9 +115,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/captainamerica.gif">
                     </div>
-                </div>
-                
-                
+                </div>            
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -142,9 +123,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/scarletwitch.gif">
                     </div>
-                </div>
-                
-                
+                </div>         
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -152,18 +131,14 @@
                     <div class="front face-val">
                         <img class="value" src="img/thor.gif">
                     </div>
-                </div>
-                
-                
+                </div>    
                 <div class="card"><div class="back face-val">
                     <img class="logo" src="img/marvellogo4.jpg">
                 </div>
                     <div class="front face-val">
                         <img class="value" src="img/ghostrider.gif">
                     </div>
-                </div>
-                
-                
+                </div>      
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -171,8 +146,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/jeangrey.gif">
                     </div>
-                </div>
-                
+                </div>      
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -180,9 +154,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/ironman.gif">
                     </div>
-                </div>
-                
-                
+                </div>        
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -190,9 +162,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/spiderman.gif">
                     </div>
-                </div>
-                
-                
+                </div>     
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -200,9 +170,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/storm.gif">
                     </div>
-                </div>
-                
-                
+                </div>  
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -210,9 +178,7 @@
                     <div class="front face-val">
                         <img class="value" src="img/mystique.gif">
                     </div>
-                </div>
-                
-                
+                </div>     
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -221,8 +187,6 @@
                         <img class="value" src="img/wolverine.gif">
                     </div>
                 </div>
-                
-                
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -231,8 +195,6 @@
                         <img class="value" src="img/blackwidow.gif">
                     </div>
                 </div>
-                
-                
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -241,8 +203,6 @@
                         <img class="value" src="img/hulk.gif">
                     </div>
                 </div>
-                
-                
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -251,8 +211,6 @@
                         <img class="value" src="img/captainamerica.gif">
                     </div>
                 </div>
-                
-                
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -261,8 +219,6 @@
                         <img class="value" src="img/scarletwitch.gif">
                     </div>
                 </div>
-                
-                
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -271,8 +227,6 @@
                         <img class="value" src="img/thor.gif">
                     </div>
                 </div>
-                
-                
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -281,8 +235,6 @@
                         <img class="value" src="img/ghostrider.gif">
                     </div>
                 </div>
-                
-                
                 <div class="card">
                     <div class="back face-val">
                         <img class="logo" src="img/marvellogo4.jpg">
@@ -290,11 +242,8 @@
                     <div class="front face-val">
                         <img class="value" src="img/jeangrey.gif">
                     </div>
-                
-                
                 </div>
             </div>
         </div>
     </body>
-
 </html>

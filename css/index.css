@@ -17,26 +17,26 @@ p {
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .game-details{
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
+  font-family: 'Ubuntu', sans-serif;
 }
 /* game details */
 .details{
   color: rgb(226, 222, 222);
-  font-size: 4em;
+  font-size: 35px;
 }
 
 .game-container {
   display: grid;
   grid-template-columns: repeat(8, auto);
   grid-gap: 8px;
-  /* margin: 20px; */
   justify-content: center;
-  /* perspective: 500px; */
 }
 
 .card {
@@ -45,9 +45,6 @@ p {
   width: 125px;
 }
 
-/* .card:hover {
-  cursor: url("Assets/Cursors/GhostHover.cur"), auto;
-} */
 
 .face-val {
   position: absolute;
@@ -92,15 +89,18 @@ p {
 }
 .overlay > h2{
     font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .overlay > h3{
     font-size: 40px;
-    color: rgb(184, 35, 35);
+    color: #d8d3d3;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
 .overlay-small {
-  font-size: 20pximg;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .overlay.visible {
@@ -154,7 +154,7 @@ p {
   transition: transform 100ms ease-in-out;
   transform: scale(.9);
   height: 194px;
-  width: 157px;
+  width: 165px;
 }
 
 .front-val:hover .value {
