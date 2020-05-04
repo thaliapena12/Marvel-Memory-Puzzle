@@ -1,6 +1,7 @@
 # Marvel Memory Puzzle
 
 Marvel Memory Puzzle is a Marvel themed card memory game. Players have to focus on their concentration in order to be able to match all 12 pairs of cards.  
+  ![1](https://media.giphy.com/media/gGq23c5TtRkKreeiCK/giphy.gif)
 ---
 
 ### Live Site
