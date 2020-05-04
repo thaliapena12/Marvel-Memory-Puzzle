@@ -6,12 +6,14 @@ class Game {
         this.timeLeft = timeTotal;
         this.timer = document.getElementById('time-left');
         this.ticker = document.getElementById('flips');
+        this.matches = document.getElementById('matches')
 
     }
 
     start(){
         this.checkCard = null;
         this.totalClicks = 0;
+        this.totalMatches = 0;
         this.timeLeft = this.timeTotal;
         this.cardsMatched = [];
         this.busy = true;
@@ -23,6 +25,7 @@ class Game {
         this.hide();
         this.timer.innerText = this.timeLeft;
         this.ticker.innerText = this.totalClicks;
+        this.matches.innerText = this.totalMatches;
 
     }
 
@@ -37,9 +40,8 @@ class Game {
 
     flip(card){
         if (this.checkFlip(card)) {
-            this.totalClicks++;
             card.classList.add('visible');
-            
+            this.totalClicks++;
             this.ticker.innerText = this.totalClicks;
             if (this.checkCard)
                 this.checkMatch(card);
@@ -56,11 +58,13 @@ class Game {
 
     }
     checkMatch(card){
-        if (this.cardType(card) === this.cardType(this.checkCard))
+        if (this.cardType(card) === this.cardType(this.checkCard)){
             this.cardComp(card, this.checkCard);
-        else
+        this.totalMatches++;
+        this.matches.innerText = this.totalMatches;
+        }else{
             this.notMatch(card, this.checkCard);
-
+        }
         this.checkCard = null;
 
     }
@@ -105,7 +109,7 @@ class Game {
 
     won(){
         clearInterval(this.counter);
-        document.getElementById('won').classList.add('visible');
+        document.getElementById('won-text').classList.add('visible');
         
     }
 
@@ -114,11 +118,10 @@ class Game {
 function gameReady(){
     let cardsDeck = Array.from(document.getElementsByClassName('card'));
     let overlay = Array.from(document.getElementsByClassName('overlay'));
-    let game = new Game(5, cardsDeck);
+    let game = new Game(20, cardsDeck);
 
 
     overlay.forEach(over => {
-   
         over.addEventListener('click', () => {
             over.classList.remove('visible');
             game.start();
