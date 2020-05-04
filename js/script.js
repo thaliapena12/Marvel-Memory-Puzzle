@@ -98,14 +98,15 @@ class Game {
     }
 
     gameOver(){
-        document.getElementById('game-over').classList.add('visible');
         clearInterval(this.counter);
+        document.getElementById('gameover').classList.add('visible');
+
     }
 
     won(){
-        
-        document.getElementById('won').classList.add('visible');
         clearInterval(this.counter);
+        document.getElementById('won').classList.add('visible');
+        
     }
 
 }
@@ -113,7 +114,7 @@ class Game {
 function gameReady(){
     let cardsDeck = Array.from(document.getElementsByClassName('card'));
     let overlay = Array.from(document.getElementsByClassName('overlay'));
-    let game = new Game(120, cardsDeck);
+    let game = new Game(5, cardsDeck);
 
 
     overlay.forEach(over => {
