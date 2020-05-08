@@ -15,7 +15,7 @@ Marvel Memory Puzzle is a Marvel themed card memory game. Players have to focus 
 
 ## Objectives
 
-- Single page application with Vanilla JS, HTML and CSS.
+- Single page application with Plain JS, HTML and CSS.
 
 
 ### Future Expansions
