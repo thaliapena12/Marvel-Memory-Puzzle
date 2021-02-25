@@ -36,7 +36,7 @@ Marvel Memory Puzzle is a Marvel themed card memory game. Players have to focus 
 ## Getting Started
 
 #### How To Run The Application
-- Copy Path to entry file (index.css) and paste on your browser.
+- Copy Path to entry file (index.html) and paste on your browser.
 
 
 ## Author
