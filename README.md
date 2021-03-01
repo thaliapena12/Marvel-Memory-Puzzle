@@ -41,8 +41,8 @@ Marvel Memory Puzzle is a Marvel themed card memory game. Players have to focus 
 
 ## Author
 
-- Thalia Peña.
+- Thalia Peña
 
----
+
 
 
