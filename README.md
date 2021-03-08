@@ -8,7 +8,7 @@ Marvel Memory Puzzle is a Marvel themed card memory game. Players have to focus 
 
 ### Live Site
 
-[Link](https://thaliapena12.github.io/Marvel-Memory-Puzzle/)
+[Link](https://marvel-memory-game-js.herokuapp.com/)
 
 ---
 
